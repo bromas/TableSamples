@@ -17,15 +17,26 @@ class RootCellConfig: UIViewController {
       let destination = segue.destinationViewController as? SimpleSelectTable {
         let dataConfigured = TVMConfigurationManager.sharedInstance.configureNibCell(destination)
         
-//        Generic controllers would make this so pretty but so painful to use with storyboards
-        dataConfigured.actionOnSelection = { _, viewModel, index in
+        dataConfigured.actionOnSelection = { table, _, viewModel, index in
           let post = (viewModel as! PostTableViewModel<AppNetPost>).objectAtIndex(index)
           UIAlertView(title: "Tapped", message: post.user.userName, delegate: .None, cancelButtonTitle: "Ok").show()
         }
         
     } else if segue.identifier == "cellStory",
       let destination = segue.destinationViewController as? SimpleSelectTable {
-        TVMConfigurationManager.sharedInstance.configureStoryCell(destination)
+        let dataConfigured = TVMConfigurationManager.sharedInstance.configureStoryCell(destination)
+        
+        dataConfigured.actionOnSelection = { table, _, viewModel, index in
+          let post = (viewModel as! PostTableViewModel<AppNetPost>).objectAtIndex(index)
+          table.performSegueWithIdentifier("showNib", sender: .None)
+        }
+        
+        dataConfigured.segueConfigurationBlock = { segue, _ in
+          if segue.identifier == "showNib",
+            let destination = segue.destinationViewController as? SimpleSelectTable {
+              TVMConfigurationManager.sharedInstance.configureNibCell(destination)
+          }
+        }
     }
   }
   

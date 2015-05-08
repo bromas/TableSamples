@@ -11,7 +11,11 @@ import UIKit
 
 public class SimpleSelectTable: UIViewController, UITableViewDelegate, UITableViewDataSource {
   
-  public var actionOnSelection : (cell: UITableViewCell, viewModel: SimpleSelectTableViewModel?, indexPath: Int) -> Void = { (tableViewModel, cell, index) in
+  public var actionOnSelection: (table: SimpleSelectTable, cell: UITableViewCell, viewModel: SimpleSelectTableViewModel?, indexPath: Int) -> Void = { (table, tableViewModel, cell, index) in
+    
+  }
+  
+  public var segueConfigurationBlock: (segue: UIStoryboardSegue, sender: AnyObject?) -> Void = { segue, _ in
     
   }
   
@@ -21,6 +25,10 @@ public class SimpleSelectTable: UIViewController, UITableViewDelegate, UITableVi
   var viewModel: SimpleSelectTableViewModel?
   var cellIdentifier: String = "cellIdentifier"
   var cellConfiguration: CellRegistrationConfiguration?
+  
+  public override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    segueConfigurationBlock(segue: segue, sender: sender)
+  }
   
   public func configure(#viewModel: SimpleSelectTableViewModel) {
     self.viewModel = viewModel
@@ -97,7 +105,7 @@ public class SimpleSelectTable: UIViewController, UITableViewDelegate, UITableVi
   }
   
   public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    actionOnSelection(cell: self.table.cellForRowAtIndexPath(indexPath)!, viewModel: self.viewModel, indexPath: indexPath.row)
+    actionOnSelection(table: self, cell: self.table.cellForRowAtIndexPath(indexPath)!, viewModel: self.viewModel, indexPath: indexPath.row)
     self.table.deselectRowAtIndexPath(indexPath, animated: true)
   }
   

@@ -162,6 +162,7 @@
                     </view>
                     <connections>
                         <outlet property="table" destination="9JP-Mp-KrS" id="Dsg-f2-yGP"/>
+                        <segue destination="FAS-hn-qQp" kind="show" identifier="showNib" id="9x8-tv-7in"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpe-bb-JXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,4 +170,7 @@
             <point key="canvasLocation" x="1058" y="-3"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9x8-tv-7in"/>
+    </inferredMetricsTieBreakers>
 </document>

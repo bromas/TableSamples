@@ -28,8 +28,6 @@
 		D32BB94A1AE42D8E004D1C71 /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90A1AE1A32B004D1C71 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D32BB94B1AE42D8E004D1C71 /* BCCoalescing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */; };
 		D32BB94C1AE42D8E004D1C71 /* BCCoalescing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D32BB94F1AE42D8E004D1C71 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90D1AE1A32B004D1C71 /* ReactiveCocoa.framework */; };
-		D32BB9501AE42D8E004D1C71 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90D1AE1A32B004D1C71 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D32BB9511AE42D8E004D1C71 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90E1AE1A32B004D1C71 /* Runes.framework */; };
 		D32BB9521AE42D8E004D1C71 /* Runes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90E1AE1A32B004D1C71 /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D32BB9531AE42D8E004D1C71 /* StrategicControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90F1AE1A32B004D1C71 /* StrategicControllers.framework */; };
@@ -50,10 +48,6 @@
 		D3ABDE681AEADE4F003D59E4 /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ABDE671AEADE4F003D59E4 /* CellConfiguration.swift */; };
 		D3AEF1BC1AFD2D200037EE21 /* ActivityViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1BA1AFD2D050037EE21 /* ActivityViewController.framework */; };
 		D3AEF1BD1AFD2D200037EE21 /* ActivityViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1BA1AFD2D050037EE21 /* ActivityViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3AEF1C21AFD2D740037EE21 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1C01AFD2D680037EE21 /* Result.framework */; };
-		D3AEF1C31AFD2D740037EE21 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1C01AFD2D680037EE21 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3AEF1C41AFD2D740037EE21 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1BE1AFD2D610037EE21 /* Box.framework */; };
-		D3AEF1C51AFD2D740037EE21 /* Box.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3AEF1BE1AFD2D610037EE21 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,9 +94,6 @@
 				D3ABDE5C1AEADDA9003D59E4 /* TableViewViewModel.framework in Embed Frameworks */,
 				D32BB9541AE42D8E004D1C71 /* StrategicControllers.framework in Embed Frameworks */,
 				D32BB9481AE42D8E004D1C71 /* Architect.framework in Embed Frameworks */,
-				D3AEF1C31AFD2D740037EE21 /* Result.framework in Embed Frameworks */,
-				D32BB9501AE42D8E004D1C71 /* ReactiveCocoa.framework in Embed Frameworks */,
-				D3AEF1C51AFD2D740037EE21 /* Box.framework in Embed Frameworks */,
 				D32BB94A1AE42D8E004D1C71 /* Argo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -124,7 +115,6 @@
 		D32BB9091AE1A32B004D1C71 /* Architect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Architect.framework; path = Carthage/Build/iOS/Architect.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90A1AE1A32B004D1C71 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BCCoalescing.framework; path = Carthage/Build/iOS/BCCoalescing.framework; sourceTree = SOURCE_ROOT; };
-		D32BB90D1AE1A32B004D1C71 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90E1AE1A32B004D1C71 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90F1AE1A32B004D1C71 /* StrategicControllers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StrategicControllers.framework; path = Carthage/Build/iOS/StrategicControllers.framework; sourceTree = SOURCE_ROOT; };
 		D32BB9191AE1A38D004D1C71 /* Table-ViewModel-Ideas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Table-ViewModel-Ideas-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -153,8 +143,6 @@
 		D3ABDE651AEADE0B003D59E4 /* SimpleSelectTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSelectTableViewModel.swift; sourceTree = "<group>"; };
 		D3ABDE671AEADE4F003D59E4 /* CellConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfiguration.swift; sourceTree = "<group>"; };
 		D3AEF1BA1AFD2D050037EE21 /* ActivityViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityViewController.framework; path = Carthage/Build/iOS/ActivityViewController.framework; sourceTree = SOURCE_ROOT; };
-		D3AEF1BE1AFD2D610037EE21 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = SOURCE_ROOT; };
-		D3AEF1C01AFD2D680037EE21 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +156,6 @@
 				D3ABDE5B1AEADDA9003D59E4 /* TableViewViewModel.framework in Frameworks */,
 				D32BB9531AE42D8E004D1C71 /* StrategicControllers.framework in Frameworks */,
 				D32BB9471AE42D8E004D1C71 /* Architect.framework in Frameworks */,
-				D3AEF1C21AFD2D740037EE21 /* Result.framework in Frameworks */,
-				D32BB94F1AE42D8E004D1C71 /* ReactiveCocoa.framework in Frameworks */,
-				D3AEF1C41AFD2D740037EE21 /* Box.framework in Frameworks */,
 				D32BB9491AE42D8E004D1C71 /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,12 +300,9 @@
 			children = (
 				D3AEF1BA1AFD2D050037EE21 /* ActivityViewController.framework */,
 				D32BB9191AE1A38D004D1C71 /* Table-ViewModel-Ideas-Bridging-Header.h */,
-				D3AEF1C01AFD2D680037EE21 /* Result.framework */,
-				D3AEF1BE1AFD2D610037EE21 /* Box.framework */,
 				D32BB9091AE1A32B004D1C71 /* Architect.framework */,
 				D32BB90A1AE1A32B004D1C71 /* Argo.framework */,
 				D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */,
-				D32BB90D1AE1A32B004D1C71 /* ReactiveCocoa.framework */,
 				D32BB90E1AE1A32B004D1C71 /* Runes.framework */,
 				D32BB90F1AE1A32B004D1C71 /* StrategicControllers.framework */,
 			);
