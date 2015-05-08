@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import Runes
 import Argo
-import Alamofire
 
 enum ProvidedImage {
   case found(UIImage)
@@ -18,6 +17,8 @@ enum ProvidedImage {
 }
 
 class ANPostRequestsManager {
+  
+  let streamURL = "https://alpha-api.app.net/stream/0/posts/stream/global"
   
   let coalesce = BCCoalesce()
   var userIDIconMap: [String: UIImage] = [:]
@@ -32,10 +33,19 @@ class ANPostRequestsManager {
   }
   
   func recentPosts(completion: ([AppNetPost]) -> Void) -> Void {
-    Alamofire.request(.GET, "https://alpha-api.app.net/stream/0/posts/stream/global").responseArgoJSON({ _, _, json, _ in
-      let result = AppNetPostsResponse.decode(json)?.posts ?? []
-      completion(result)
-    })
+    self.session.dataTaskWithURL(NSURL(string: streamURL)!, completionHandler: { (data, _, err) -> Void in
+      let result: [AppNetPost]
+      switch err {
+      case let .Some(error):
+        result = []
+      case .None:
+        let json = JSONValue.parse(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: nil)!)
+        result = AppNetPostsResponse.decode(json)?.posts ?? []
+      }
+      NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+        completion(result)
+      })
+    }).resume()
   }
   
   func localImageForUser(forUser: AppNetUser) -> ProvidedImage {
@@ -50,12 +60,19 @@ class ANPostRequestsManager {
     
     return self.coalesce.addCallbackWithProgress({ (_) -> Void in }, andCompletion: { (data, _, error) -> Void in
       
+//      could handle errors here but they would happen for each requester.
       self.userIDIconMap[forUser.userID] = data as? UIImage
       completion(self.userIDIconMap[forUser.userID])
       
       }, forIdentifier: forUser.userID) { () -> Void in
-        self.session.dataTaskWithURL(NSURL(string: forUser.avatarUrl)!, completionHandler: { (data, _, error) -> Void in
-          self.coalesce.identifier(forUser.userID, completedWithData: data, andError: error)
+        self.session.dataTaskWithURL(NSURL(string: forUser.avatarUrl)!, completionHandler: { (data, _, err) -> Void in
+          switch err {
+          case let .Some(error):
+//            handle error once here and push dummy data into completion
+            self.coalesce.identifier(forUser.userID, completedWithData: NSData(), andError: error)
+          case .None:
+            self.coalesce.identifier(forUser.userID, completedWithData: data, andError: .None)
+          }
         }).resume()
     }
   }

@@ -13,19 +13,15 @@
 		D32BB8E91AE1A0DA004D1C71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32BB8E81AE1A0DA004D1C71 /* Images.xcassets */; };
 		D32BB8EC1AE1A0DA004D1C71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32BB8EA1AE1A0DA004D1C71 /* LaunchScreen.xib */; };
 		D32BB8F81AE1A0DA004D1C71 /* Table_ViewModel_IdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB8F71AE1A0DA004D1C71 /* Table_ViewModel_IdeasTests.swift */; };
-		D32BB91F1AE1A422004D1C71 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32BB91D1AE1A422004D1C71 /* FBKVOController.m */; };
 		D32BB9291AE1A67A004D1C71 /* AppNetPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9231AE1A67A004D1C71 /* AppNetPostsResponse.swift */; };
 		D32BB92A1AE1A67A004D1C71 /* AppNetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9241AE1A67A004D1C71 /* AppNetUser.swift */; };
 		D32BB92C1AE1A67A004D1C71 /* AppNetPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9261AE1A67A004D1C71 /* AppNetPost.swift */; };
 		D32BB92D1AE1A67A004D1C71 /* AppNetPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9271AE1A67A004D1C71 /* AppNetPostCell.swift */; };
 		D32BB92E1AE1A67A004D1C71 /* AppNetPost.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32BB9281AE1A67A004D1C71 /* AppNetPost.xib */; };
-		D32BB9301AE1A6A4004D1C71 /* Alamofire+ArgoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB92F1AE1A6A4004D1C71 /* Alamofire+ArgoRequest.swift */; };
 		D32BB9381AE1A7F8004D1C71 /* tvmCellConfig.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32BB9371AE1A7F8004D1C71 /* tvmCellConfig.storyboard */; };
 		D32BB93A1AE1AAB7004D1C71 /* RootCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9391AE1AAB7004D1C71 /* RootCellConfig.swift */; };
 		D32BB93F1AE1B434004D1C71 /* CellConfigTViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB93E1AE1B434004D1C71 /* CellConfigTViewModel.swift */; };
 		D32BB9411AE1B4A6004D1C71 /* ANPostRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32BB9401AE1B4A6004D1C71 /* ANPostRequestManager.swift */; };
-		D32BB9431AE42D8E004D1C71 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB9071AE1A32B004D1C71 /* Alamofire.framework */; };
-		D32BB9441AE42D8E004D1C71 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB9071AE1A32B004D1C71 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D32BB9471AE42D8E004D1C71 /* Architect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB9091AE1A32B004D1C71 /* Architect.framework */; };
 		D32BB9481AE42D8E004D1C71 /* Architect.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB9091AE1A32B004D1C71 /* Architect.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D32BB9491AE42D8E004D1C71 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32BB90A1AE1A32B004D1C71 /* Argo.framework */; };
@@ -102,7 +98,6 @@
 				D32BB9521AE42D8E004D1C71 /* Runes.framework in Embed Frameworks */,
 				D32BB94C1AE42D8E004D1C71 /* BCCoalescing.framework in Embed Frameworks */,
 				D3ABDE5C1AEADDA9003D59E4 /* TableViewViewModel.framework in Embed Frameworks */,
-				D32BB9441AE42D8E004D1C71 /* Alamofire.framework in Embed Frameworks */,
 				D32BB9541AE42D8E004D1C71 /* StrategicControllers.framework in Embed Frameworks */,
 				D32BB9481AE42D8E004D1C71 /* Architect.framework in Embed Frameworks */,
 				D3AEF1C31AFD2D740037EE21 /* Result.framework in Embed Frameworks */,
@@ -126,7 +121,6 @@
 		D32BB8F11AE1A0DA004D1C71 /* Table-ViewModel-IdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table-ViewModel-IdeasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32BB8F61AE1A0DA004D1C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D32BB8F71AE1A0DA004D1C71 /* Table_ViewModel_IdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_ViewModel_IdeasTests.swift; sourceTree = "<group>"; };
-		D32BB9071AE1A32B004D1C71 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		D32BB9091AE1A32B004D1C71 /* Architect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Architect.framework; path = Carthage/Build/iOS/Architect.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90A1AE1A32B004D1C71 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BCCoalescing.framework; path = Carthage/Build/iOS/BCCoalescing.framework; sourceTree = SOURCE_ROOT; };
@@ -134,14 +128,11 @@
 		D32BB90E1AE1A32B004D1C71 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = SOURCE_ROOT; };
 		D32BB90F1AE1A32B004D1C71 /* StrategicControllers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StrategicControllers.framework; path = Carthage/Build/iOS/StrategicControllers.framework; sourceTree = SOURCE_ROOT; };
 		D32BB9191AE1A38D004D1C71 /* Table-ViewModel-Ideas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Table-ViewModel-Ideas-Bridging-Header.h"; sourceTree = "<group>"; };
-		D32BB91D1AE1A422004D1C71 /* FBKVOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBKVOController.m; sourceTree = "<group>"; };
-		D32BB91E1AE1A422004D1C71 /* FBKVOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBKVOController.h; sourceTree = "<group>"; };
 		D32BB9231AE1A67A004D1C71 /* AppNetPostsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetPostsResponse.swift; sourceTree = "<group>"; };
 		D32BB9241AE1A67A004D1C71 /* AppNetUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetUser.swift; sourceTree = "<group>"; };
 		D32BB9261AE1A67A004D1C71 /* AppNetPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetPost.swift; sourceTree = "<group>"; };
 		D32BB9271AE1A67A004D1C71 /* AppNetPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNetPostCell.swift; sourceTree = "<group>"; };
 		D32BB9281AE1A67A004D1C71 /* AppNetPost.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppNetPost.xib; sourceTree = "<group>"; };
-		D32BB92F1AE1A6A4004D1C71 /* Alamofire+ArgoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+ArgoRequest.swift"; sourceTree = "<group>"; };
 		D32BB9371AE1A7F8004D1C71 /* tvmCellConfig.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = tvmCellConfig.storyboard; sourceTree = "<group>"; };
 		D32BB9391AE1AAB7004D1C71 /* RootCellConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCellConfig.swift; sourceTree = "<group>"; };
 		D32BB93E1AE1B434004D1C71 /* CellConfigTViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellConfigTViewModel.swift; sourceTree = "<group>"; };
@@ -175,7 +166,6 @@
 				D32BB9511AE42D8E004D1C71 /* Runes.framework in Frameworks */,
 				D32BB94B1AE42D8E004D1C71 /* BCCoalescing.framework in Frameworks */,
 				D3ABDE5B1AEADDA9003D59E4 /* TableViewViewModel.framework in Frameworks */,
-				D32BB9431AE42D8E004D1C71 /* Alamofire.framework in Frameworks */,
 				D32BB9531AE42D8E004D1C71 /* StrategicControllers.framework in Frameworks */,
 				D32BB9471AE42D8E004D1C71 /* Architect.framework in Frameworks */,
 				D3AEF1C21AFD2D740037EE21 /* Result.framework in Frameworks */,
@@ -294,6 +284,9 @@
 		D32BB9031AE1A2FF004D1C71 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D32BB9271AE1A67A004D1C71 /* AppNetPostCell.swift */,
+				D32BB9281AE1A67A004D1C71 /* AppNetPost.xib */,
+				D32BB9561AE6BE7D004D1C71 /* AppNetStoryCell.swift */,
 				D32BB8E51AE1A0DA004D1C71 /* Main.storyboard */,
 			);
 			name = View;
@@ -305,9 +298,6 @@
 				D32BB9231AE1A67A004D1C71 /* AppNetPostsResponse.swift */,
 				D32BB9241AE1A67A004D1C71 /* AppNetUser.swift */,
 				D32BB9261AE1A67A004D1C71 /* AppNetPost.swift */,
-				D32BB9271AE1A67A004D1C71 /* AppNetPostCell.swift */,
-				D32BB9281AE1A67A004D1C71 /* AppNetPost.xib */,
-				D32BB9561AE6BE7D004D1C71 /* AppNetStoryCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,13 +314,9 @@
 			isa = PBXGroup;
 			children = (
 				D3AEF1BA1AFD2D050037EE21 /* ActivityViewController.framework */,
-				D32BB92F1AE1A6A4004D1C71 /* Alamofire+ArgoRequest.swift */,
 				D32BB9191AE1A38D004D1C71 /* Table-ViewModel-Ideas-Bridging-Header.h */,
-				D32BB91D1AE1A422004D1C71 /* FBKVOController.m */,
-				D32BB91E1AE1A422004D1C71 /* FBKVOController.h */,
 				D3AEF1C01AFD2D680037EE21 /* Result.framework */,
 				D3AEF1BE1AFD2D610037EE21 /* Box.framework */,
-				D32BB9071AE1A32B004D1C71 /* Alamofire.framework */,
 				D32BB9091AE1A32B004D1C71 /* Architect.framework */,
 				D32BB90A1AE1A32B004D1C71 /* Argo.framework */,
 				D32BB90B1AE1A32B004D1C71 /* BCCoalescing.framework */,
@@ -614,9 +600,7 @@
 				D32BB9291AE1A67A004D1C71 /* AppNetPostsResponse.swift in Sources */,
 				D32BB9571AE6BE7D004D1C71 /* AppNetStoryCell.swift in Sources */,
 				D32BB8E41AE1A0DA004D1C71 /* ViewController.swift in Sources */,
-				D32BB91F1AE1A422004D1C71 /* FBKVOController.m in Sources */,
 				D3ABDE3C1AE89310003D59E4 /* TVMWoven.swift in Sources */,
-				D32BB9301AE1A6A4004D1C71 /* Alamofire+ArgoRequest.swift in Sources */,
 				D32BB92A1AE1A67A004D1C71 /* AppNetUser.swift in Sources */,
 				D3ABDE2D1AE6F1C4003D59E4 /* TVMConfigurationManager.swift in Sources */,
 				D32BB92D1AE1A67A004D1C71 /* AppNetPostCell.swift in Sources */,

@@ -65,10 +65,10 @@ public class SimpleSelectTable: UIViewController, UITableViewDelegate, UITableVi
     indicator.hidesWhenStopped = true
     indicator.startAnimating()
     self.activityIndicator = indicator
-    self.viewModel?.refreshData() { [unowned self] () -> Void in
-      self.table.reloadData()
-      self.activityIndicator.stopAnimating()
-      if let controller = self.tableController {
+    self.viewModel?.refreshData() { [weak self] () -> Void in
+      self?.table.reloadData()
+      self?.activityIndicator.stopAnimating()
+      if let controller = self?.tableController {
         let refresh = UIRefreshControl()
         refresh.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
         controller.refreshControl = refresh
